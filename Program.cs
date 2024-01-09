@@ -18,7 +18,6 @@ Console.WriteLine("Loading...");
 Console.WriteLine($"Hello {name} ");
 Console.WriteLine("To find you, We must know your phone number! Please Enter:");
 string phoneNumber = Console.ReadLine();
-int phone = Convert.ToInt32(phoneNumber);
 Console.WriteLine("Enter you age to confirm that you are over 18+ ");
 string age = Console.ReadLine();
 int yourAge = Convert.ToInt32(age);
@@ -41,11 +40,12 @@ System.Console.WriteLine($"You entered {press}");
 int ageDifference = myAge-yourAge;
 Console.WriteLine($"Our age difference is {ageDifference}");
 Console.WriteLine("Thank you for participating in my first project");
-// < <= > >= == !=
+// <  <=  >  >=  ==  !=
 Console.WriteLine($"You are younger than me {myAge>yourAge}");
 Console.WriteLine($"You are older than me {myAge<yourAge}");
 Console.WriteLine($"You are older or equal me {myAge<=yourAge}");
 Console.WriteLine($"You are younger or equal {myAge>=yourAge}");
 Console.WriteLine($"Your age is equal to mine {myAge==yourAge}");
 Console.WriteLine($"Your age is not equal to mine {myAge!=yourAge}");
+System.Console.WriteLine($"Your age is less than 10 {yourAge<10}");
 
