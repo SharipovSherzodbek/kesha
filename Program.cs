@@ -1,6 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
 
-using System;
 Console.WriteLine("CONGRATULATIONS !, Now you have a chanece to win 1ooo$");
 // Console.WriteLine("To get a gift \"You have to SIGN IN and answer for 5 questions ready?\"");
 // Console.WriteLine("To confirm click \"Yes\" to ignore click \"No\"");
