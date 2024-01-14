@@ -77,8 +77,8 @@ else
 System.Console.ReadLine();
 System.Console.WriteLine("Let me introduce you my friends!");
 
-//string [] friendsName = { "Vasya", "Ilya", "Donka"}; yoki
-string [] friendsName = new string [3]; 
+//string [] friendsName = { "Vasya", "Ilya", name }; yoki yana bitta usuli 
+string [] friendsName = new string [3];  
 friendsName[0] = "Vasya";
 friendsName[1] = "Ilya";
 friendsName[2] = name;
@@ -86,15 +86,27 @@ int [] friendsAge = {45, 14, yourAge };
 string[] address = {"Chust", "Samarqand", "Tashkent"};
 System.Console.WriteLine($"{friendsName[0]} is {friendsAge[1]} years old" );
 System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]} years old" );
-System.Console.WriteLine($"He is from {address[1]}");
-
+System.Console.WriteLine($"{friendsName[1]} is from {address[1]}");
+System.Console.WriteLine("Enter age...");
 friendsAge[2] = int.Parse(Console.ReadLine());
 System.Console.WriteLine($"{friendsName[1]} is {friendsAge[2]} years old" );
 
-//FOR va FOR EACH
+               // FOR EACH 
+// demak buni kamchilgi faqat bitta Array bilan ishlaydi
 foreach (string ism in friendsName)
 {
     System.Console.WriteLine(ism);
 }
 
-
+               // FOR
+// ichida uchtA bulim buladi, malum bir sondan ikkinchi songacha yurib chiqasan 
+// degani va cheksiz ishlatsak buladi,
+for(int i=0 ; i<friendsName.Length; i++  ) 
+{
+   System.Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} years old" ); 
+}
+//    misol
+for (int i = 0; i <= 10; i++)
+{
+    Console.WriteLine(i);
+}
