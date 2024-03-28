@@ -1,53 +1,45 @@
-namespace KESHA.Classes
-{
-    class Animal
-    {
-      public int Age {get; set; }    
-      public string Name {get; set;} 
-      public int AgeDifference { get; set; }
 
-      public Animal()
-      {
-        Name = "No name";
-        Age = 0;
-        AgeDifference = 0;
-      }
+    class Animals
+ {
+    public int Age { get; set; }
+    public string Name { get; set; }
+    public int AgeDifference { get; set; }
 
-      public Animal (
-        string name,
-        int userAge, 
-        int animalAge)
-      {
-        Name = name;
-        Age = animalAge;
-        //AgeDifference = userAge - animalAge;
-        //AgeDifference = CalculateAgeDiffernce(userAge, animalAge);
-        CalculateAgeDiffernceWithNoReturn(userAge, animalAge);
-      }
+   public Animals(string name, int age)
+   {
+      Name = name;
+      Age = age;
+   }
 
-      public void PrintAgeDifference()
-      {
+       public void CalculateAgeDifferenceWithNoReturn(int userAge)
+   {
+      AgeDifference = userAge - Age;
+   }
+   
+   public void PrintAgeDifference()
+   {
       Console.WriteLine($"The Difference between your and {Name}'s age is {AgeDifference}");
-      }
-
-      public void CompareAges(int userAge)
+   }
+  
+   public void CompareAges(int userAge)
+   {
+      if (userAge > Age)
       {
-            if (userAge > Age)
-          {
-            Console.WriteLine($"You are older than me!"); 
-          }
-          else if (userAge == Age)
-          {
-            Console.WriteLine($"Your age is equal to kesha's age!");
-          }
-          else 
-          {
-            Console.WriteLine($"You are younger than me!");  
-          }
+       Console.WriteLine($"You are older than KESHA!"); 
       }
-public void TellAboutFriends(string userName, int userAge )
-{
-          Console.WriteLine("Let me tell you about my friends.");
+      else if (userAge == Age)
+      {
+       Console.WriteLine($"Your age is equal to KESHA's age!");
+      }
+      else 
+      {
+       Console.WriteLine($"You are younger than KESHA!");  
+      }
+   }
+
+   public void TellAboutFriends(string userName, int userAge)
+   {
+      Console.WriteLine("Let me tell you about my friends.");
 
         string[] friendsName = new string [3];
         friendsName[0] = "Valya";
@@ -60,17 +52,14 @@ public void TellAboutFriends(string userName, int userAge )
         {
           Console.WriteLine($"{friendsName[i]} is {friendsAge[i]} year old");
         }
-}
-    
-      private int CalculateAgeDiffernce (int userAge, int animalAge)
-      {
-        return userAge - animalAge;
-      } 
+   }
 
-    
-    private void CalculateAgeDiffernceWithNoReturn (int userAge, int animalAge)
-    {
-      AgeDifference = userAge - animalAge;
-    }
-    }
-}
+   public void Greeting(string userName)
+   {
+      if(userName == "")
+      {
+         userName = "Unknown Person";
+      }
+     Console.WriteLine($"Hello {userName} ");
+   }
+ }
