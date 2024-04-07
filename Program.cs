@@ -6,7 +6,8 @@ namespace KESHA
     {
      static void Main(string[] args)
     {   
-        try{
+        try
+        {
         Animals kesha = new Animals ("KESHA", age: 7);
         Animals kasew = new Bird("Kasew" , age: 7);
         Pet lida =  new Pet("Lidaa" , 9);
@@ -20,8 +21,7 @@ namespace KESHA
         kesha.Greeting(userName);
         kasew.Greeting(userName);
         lida.Greeting(userName);
-       // pet.Great(userName);
-        
+       // pet.Great(userName);        
 
         Console.WriteLine("Enter your age ... ");
         int userAge = int.Parse(Console.ReadLine());
