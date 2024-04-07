@@ -1,3 +1,4 @@
+// interface
 public interface IAnimals 
 {
     void PrintAgeDifference();

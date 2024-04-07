@@ -1,3 +1,4 @@
+// public abstract class Animals 
 public  class Animals : IAnimals
  {
     public int Age { get; set; }
