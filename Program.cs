@@ -21,7 +21,7 @@ namespace KESHA
         kesha.Greeting(userName);
         kasew.Greeting(userName);
         lida.Greeting(userName);
-       // pet.Great(userName);        
+       // Abstract: pet.Great(userName);        
 
         Console.WriteLine("Enter your age ... ");
         int userAge = int.Parse(Console.ReadLine());
